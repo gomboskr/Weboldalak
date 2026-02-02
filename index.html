@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="K2 Barber Shop - Precízió és Stílus. Profi hajvágás és szakállápolás Budapesten. Foglalj időpontot online!">
+    <title>K2 Barber | Urban Haircut & Style</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">K2 <span class="highlight">BARBER</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Kezdőlap</a></li>
+            <li><a href="#about">Rólam</a></li>
+            <li><a href="#services">Árak</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <a href="#booking" class="btn-nav">Foglalás Most</a>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home" class="mobile-link">Kezdőlap</a></li>
+            <li><a href="#about" class="mobile-link">Rólam</a></li>
+            <li><a href="#services" class="mobile-link">Árak</a></li>
+            <li><a href="#booking" class="mobile-link">Foglalás</a></li>
+            <li><a href="#contact" class="mobile-link">Kapcsolat</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="fade-in">PRECÍZIÓ <br> <span class="outline-text">& STÍLUS</span></h1>
+            <p class="fade-in delay-1">Városra tervezve, neked kitalálva. Hozd ki magadból a maximumot.</p>
+            <div class="cta-buttons fade-in delay-2">
+                <a href="#booking" class="btn btn-primary">Időpontfoglalás</a>
+                <a href="#services" class="btn btn-secondary">Szolgáltatások</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Görgess le</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img reveal-left">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2074&auto=format&fit=crop"
+                        alt="Barber munka közben">
+                    <div class="experience-badge">
+                        <span class="years">5+</span>
+                        <span class="text">Év Tapasztalat</span>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h2 class="section-title">A SZÉKBEN</h2>
+                    <p class="lead">Nem csak egy hajvágás. Ez az a hely, ahol a klasszikus barber hagyományok
+                        találkoznak a modern utcai stílussal.</p>
+                    <p>Több éves tapasztalattal a hátam mögött célom, hogy mindenki magabiztosan távozzon. Legyen szó
+                        egy sharp fade-ről vagy egy precíz szakálligazításról, nálam jó kezekben vagy.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Prémium eszközök (Wahl, Andis)</li>
+                        <li><i class="fas fa-check"></i> Személyre szabott tanácsadás</li>
+                        <li><i class="fas fa-check"></i> Lazító atmoszféra</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <h2 class="section-title center-text reveal-bottom">SZOLGÁLTATÁSOK</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal-bottom delay-1">
+                    <div class="icon"><i class="fas fa-cut"></i></div>
+                    <h3>HAJVÁGÁS</h3>
+                    <p>Konzultáció, mosás, precíz vágás és styling.</p>
+                    <div class="price">5.500 Ft</div>
+                    <button class="btn-book-service" onclick="selectService('hajvagas')">Foglalás</button>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card reveal-bottom delay-2">
+                    <div class="icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>SZAKÁLL</h3>
+                    <p>Gépi és forró törölközős borotválás/igazítás.</p>
+                    <div class="price">3.500 Ft</div>
+                    <button class="btn-book-service" onclick="selectService('szakall')">Foglalás</button>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card reveal-bottom delay-3 highlight-card">
+                    <div class="popular-tag">LEGKERESETTEBB</div>
+                    <div class="icon"><i class="fas fa-star"></i></div>
+                    <h3>KOMBINÁLT</h3>
+                    <p>A teljes csomag: haj és szakáll együtt, full styling.</p>
+                    <div class="price">8.000 Ft</div>
+                    <button class="btn-book-service" onclick="selectService('kombinalt')">Foglalás</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking section-padding" id="booking">
+        <div class="container">
+            <div class="booking-wrapper reveal-bottom">
+                <div class="booking-header">
+                    <h2>FOGLALJ IDŐPONTOT</h2>
+                    <p>Válaszd ki a számodra megfelelő szolgáltatást és időpontot!</p>
+                </div>
+
+                <form id="bookingForm" class="booking-form">
+                    <!-- Step 1: Service -->
+                    <div class="form-group">
+                        <label for="service">Szolgáltatás</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Válassz szolgáltatást...</option>
+                            <option value="hajvagas">Hajvágás (5.500 Ft)</option>
+                            <option value="szakall">Szakálligazítás (3.500 Ft)</option>
+                            <option value="kombinalt">Kombinált Csomag (8.000 Ft)</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 2: Date & Time -->
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="date">Dátum</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="time">Időpont</label>
+                            <select id="time" name="time" required>
+                                <option value="" disabled selected>Válassz időpontot...</option>
+                                <!-- JS will populate this -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Personal Info -->
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="name">Név</label>
+                            <input type="text" id="name" name="name" placeholder="Példa János" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="phone">Telefonszám</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+36 30 123 4567" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email cím</label>
+                        <input type="email" id="email" name="email" placeholder="pelda@email.hu" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Megjegyzés (opcionális)</label>
+                        <textarea id="notes" name="notes" placeholder="Különleges kérések vagy megjegyzések..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">Foglalás Megerősítése</button>
+                </form>
+
+                <div id="bookingMessage" class="booking-message hidden">
+                    <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Sikeres Foglalás!</h3>
+                    <p>Köszönjük, <span id="confName"></span>!</p>
+                    <p>Várunk szeretettel: <span id="confDate"></span> <span id="confTime"></span></p>
+                    <button id="newBookingBtn" class="btn btn-secondary">Új foglalás</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>K2 BARBER</h2>
+                <p>Budapest, Város utca 12.</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-phone"></i> +36 30 000 0000</p>
+                <p><i class="fas fa-envelope"></i> info@k2barber.hu</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 K2 Barber Shop. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
